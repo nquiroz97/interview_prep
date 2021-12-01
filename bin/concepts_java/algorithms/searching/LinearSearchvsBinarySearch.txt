@@ -1,0 +1,19 @@
+- linear search is like a book shelf with random assorted books, you'd have to look at 
+   every book to see if that's the one you're looking for
+- binary search, the data must be sorted, example books are sorted by author's last name
+    then that would help with the earch criteria, follows a divide and conquer approach
+
+
+    with binary search, the array section is divided into two's(the median)
+
+    example: looking for 78
+
+    3  11  21  29  41  54  61  78  110  127
+    0   1  2   3    4   5   6   7   8    9
+    -               -                    -
+
+    - 41 is less than 78, so index must be in the right section
+
+    3  11  21  29  41  54  61  78  110  127
+    0   1  2   3    4   5   6   7   8    9
+    x   x  x   x    x   -       -         -

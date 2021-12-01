@@ -1,0 +1,47 @@
+Selection sort has a runtime of O(n^2), scans from left to right, finding the smallest number, then swaps its place into first place
+ , then follows the same process starting from previousIndex + 1, runtime is O(n^2)
+
+ 
+ 25,47,3,8,18
+
+ 3,47,25,8,18 
+ 3,8,25,47,18
+ 3,8,18,47,25
+ 3,8,18,25,47
+
+Insertion sort sorts upon insertion, maintains sorting in the sorted area, runtime is O(n^2)
+
+Merge sort has a log time of O(n log n), disadvantage is that it requires making
+ a complete copy of the entire array in question, thus increases space complexity.
+ It is solved in a divide and conquer recursive manner.
+ Splits the array in half and sorts both sides
+
+ 2,4,1,6 | 8,5,3,7
+ 1,2,4,6 | 3,5,7,8
+
+ Then compares the indexes of each side
+ 1,2,4,6 | 3,5,7,8
+ -         -
+
+ 1,2,4,6 | 3,5,7,8
+   -       -
+
+ 1,2,4,6 | 3,5,7,8
+     -     -  
+
+  --result--
+ 1,2,3
+
+ Steps of merge sorting 
+ 1. Splitting: merge sort invoke itself for each half of the range that we give it, 
+        stops when it satisfies the base completes. Helps to get the data to the stage 
+        where it's eligible for sorting
+ 2. Merge: when sorting takes place 
+
+
+ Quicksort is another divide and conquer algorithm, does not require creating additional 
+   arrays. It sorts the array in place. 
+   It achieves it through partitioning, uses a pivot number to compare to the elements of the 
+   array and ensures all elements smaller than the pivot are to the left of it
+            
+

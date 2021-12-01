@@ -1,0 +1,70 @@
+- everything in java needs to be inside of methods(do all of the work)
+- main method is the starting point of every java application
+- stack and heap are memory areas used by the application
+    -- stack --
+        - stack of frames that correspond to all the methods being called and the variables used(local variable)
+        - first frame would be the main(), will include local variables
+        - called methods and its variables will be in their own frames
+        - follow a first in, last out process
+        - once the method is completed, the frame is popped from stack
+        - once application is done running, main is popped from stack
+                       ____________
+                       |          |
+                       |          |
+                       |          |
+                       ------------
+                       | doMore() | ------------------------------------------------------------------- class doMore(){}
+                       -------------
+                       | doWork() |-------------------------------  class doWork(){
+                       -------------                                   float weight = 120.30, doMore();
+                       |  main()  |                                 }
+                       |          |-----------  class main(){          
+                       -------------                int age;
+                                                    doWork();
+
+                                                 }
+
+
+    -- heap --
+        - used for storing all referenced objects
+
+        // newCar is a reference variable, it points to where the created object is stored in memory(the address), 
+        // does not contain the actual data
+        ex. Car newCar = new Car();
+        ______________________________________________________
+        { Car object: object contains instance variable      }       
+        {                                                    }
+        -------------------------------------------------------
+        //if newCar is reinstatiated, newCar = new Car(), then it will no longer reference the 
+        //previous created object but now the new one 
+
+-- Garbage collection -- 
+    - used for disposing of objects that are no longer being pointed/reference to
+    - clears space in the memory 
+
+-- instance vs reference variable --
+    - instance variables typically refer to class variables(object attributes)
+    - used to maintain state of the particular object 
+    - class objects can contain instance variables of class type
+
+            class Car(){
+                int hp;
+                Engine engine;
+            }
+
+            class Engine(){
+
+            }
+
+
+            Car myCar2 = new Car();
+            Engine bigEngine = new Engine();
+            myCar2.engine = bigEngine;
+
+    - reference variables point to the address of the created object, where it's located in memory
+
+- Data types - 
+- a data type is simply a set of values and operations
+- there are primitive data types and complex data types
+- primitive data types are predefined as a reserved keyword
+- abstract data types are created using classes, but variables for the most part are private

@@ -1,0 +1,2 @@
+first item inserted is the first one to be addressed(ex. print jobs in the printer queue)
+first in first out

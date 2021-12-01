@@ -1,0 +1,17 @@
+used for storing a collection of data
+-- setbacks of an array --
+    - an array's size cannot be increased after it has been initialized
+    - for an item to be inserted in between, array will have to be iterated 
+        through and reassign new indexes to the elements
+
+- a linked list allows to insert at the head(first position), the tail(last position)
+   and in between and the rest of the will be reassigned automatically
+- there's no fixed size limitation
+- linked list nodes are composed of two things: the value and the pointer
+- a pointer if a reference to another place in memory(object || node)
+
+- in a singly and circular linked list, the nodes only know about the next node, not the one
+     preceding it 
+- doubly linked lists, the nodes are aware of the ones following and preceding them
+   this allows to insert in the middle of list
+

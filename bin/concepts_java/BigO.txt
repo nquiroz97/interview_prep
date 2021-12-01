@@ -1,0 +1,44 @@
+An algorithm is any piece of code(set of instructions) on h ow to solve a particlar problem 
+ Example: 
+
+        ** time complexity will depend(linear growth rate) on the size of the array, since it's on loop **
+        O(n)
+        public int countEvens(int elements[]){
+            int countOfEvens = 0;
+            for(int i = 0; i < elements.length; i++){
+                if(elements[i]%2 == 0){
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        ** constant time, since it does not have to loop, regardless of array size **
+        O(1)
+        public int getElementFrom(int [] a, int index){
+            return a[index];
+        }
+
+        ** exponential time(quadratic growth rate), since number of operations will be equal to size of input ^ 2
+        ** loop inside of loop
+        O(n^2)
+        public int countDuplicates(int arr1[], int arr2[]){
+            int count;
+            for(int i = 0; i < arr1.length; i++){
+                for(int j = 0; j < arr2.length; j++){
+                    if(arr1[i] == arr2[j]){
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
+        Asymptotic notation
+        logarithmic = O(log n) *inverse of exponential, uses a divide and conquer approach, ex Binary Search*
+        linear = O(n)
+        quadratic = O(n^2)
+        constant = O(1)
+        cubic = O(n^3) *loop inside of loop that's inside another loop
+        exponential = O(n^n) *where amount of iterations(loops inside of loops) cannot be calculated
+        n = input size

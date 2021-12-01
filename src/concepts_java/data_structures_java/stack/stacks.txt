@@ -1,0 +1,3 @@
+follows a last in, first out approach(ex. stack of mail)
+push - inserting an item
+pop - removing an item

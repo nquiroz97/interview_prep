@@ -1,0 +1,31 @@
+binary search offers the searching benefit of an ordered array, as well as 
+ the inserting and deleting benefits of a linked list 
+tree structure is not sequential, also called a non-binary tree, since they have more than 2 children
+ binary only allows for two children max
+      
+            A      - is the root node, level 0
+          /   \ 
+         B     C     - child node, level 1
+       / | \   <-------------------------------------------- this is a subtree
+      D  F  G  - leaf nodes since they do not have any children, level 2
+
+      - depth for leaf node D would be 2(count number of /'s(called edges or paths))
+
+          -- Binary Tree since no more than two children 
+          
+            A      - is the root node, level 0
+          /   \ 
+         B     C     - child node, level 1
+       / |    /  \   <-------------------------------------------- this is a subtree
+      D  F   G    H   - leaf nodes since they do not have any children, level 2
+
+      - depth for leaf node D would be 2(count number of /'s(called edges or paths))    
+
+
+        Parent              left child value must be less than parent value, whereas right child must be greater than parent value
+        /    \
+    left     right      - would be considered the parent of its own child nodes
+    child    child
+
+    the process of figuring out where the next values will go in the tree is called "traversing"
+    
