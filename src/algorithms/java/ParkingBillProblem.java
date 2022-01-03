@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.java;
 /*
     Given two strings representing times of entry and exit from a car parking lot, 
     ind the cost of the ticket according to the given billing rules.

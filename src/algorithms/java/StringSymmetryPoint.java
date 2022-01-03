@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.java;
 public class StringSymmetryPoint {
 
     //time complexity: O(length + N)

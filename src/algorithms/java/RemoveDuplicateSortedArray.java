@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.java;
 public class RemoveDuplicateSortedArray {
 
     public static int removeDuplicates(int[] nums) {

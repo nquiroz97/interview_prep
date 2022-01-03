@@ -1,9 +1,11 @@
 import java.util.HashMap;
 
-import algorithms.LongestWordClass;
-import algorithms.RemoveDuplicateSortedArray;
-import algorithms.StringSymmetryPoint;
-import algorithms.UserNameValidation;
+import algorithms.java.FizzBuzz;
+import algorithms.java.LongestWordClass;
+import algorithms.java.RemoveDuplicateSortedArray;
+import algorithms.java.ReverseString;
+import algorithms.java.StringSymmetryPoint;
+import algorithms.java.UserNameValidation;
 import data_structures.ArraysClass;
 
 public class App {
@@ -16,6 +18,7 @@ public class App {
     static final int[] arrayWithDuplicates1 = new int[] { 1, 1, 1, 3, 5, 5, 7 };
 
    public static void main(String[] args) throws Exception {
+       char[] string = {'h','e','l','l','o'};
         //System.out.println(containsCommonItem(ARRAY_1, ARRAY_2));
 
         /*
@@ -47,6 +50,11 @@ public class App {
         System.out.println(LongestWordClass.LongestWord("hello world"));
 
         System.out.println(UserNameValidation.FirstFactorial(9));
+
+        ReverseString.reverseStringEfficient(string);
+        System.out.println(string);
+
+        System.out.println(FizzBuzz.fizzBuzzBrute(15));
     }
 
     public static boolean containsCommonItem(char[] arr1, char[] arr2){

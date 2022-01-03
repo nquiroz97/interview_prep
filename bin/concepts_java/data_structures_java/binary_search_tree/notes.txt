@@ -24,5 +24,8 @@ tree structure is not sequential, also called a non-binary tree, since they have
 
         Parent              left child value must be less than parent value, whereas right child must be greater than parent value
         /    \
-    left     right
+    left     right      - would be considered the parent of its own child nodes
     child    child
+
+    the process of figuring out where the next values will go in the tree is called "traversing"
+    
