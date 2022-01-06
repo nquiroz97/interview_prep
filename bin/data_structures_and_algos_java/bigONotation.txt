@@ -1,0 +1,30 @@
+These days since memory is cheaper, Space Complexity is not as important as Time Complexity
+
+Space Complexity: the amount of memory used to run
+Time Complexity: how many steps have to be taken to run an algorithm, best to look at the worst case
+
+Example: Add sugar to tea
+
+1. Fetch bowl containing sugar
+2. Get a spoon
+3. Scoop out sugar using the spoon
+4. Pour spoonful of sugar into the tea
+5. Repeat steps 3 and 4 until desired amount of sugar is reached
+
+** the amount of steps depends on the amount of sugar the person needs **
+
+- number of desired sugars will equal n
+- total number of steps = 2n + 2, since steps 3 and 4 are repeated until condition is met
+- as n grows, the number of steps grows
+- The "2" in 2n and the "+2" remain constant, so they are not factored into Time Complexity.
+  The value of n determines growth rate
+- Time Complexity is O(n)
+- Linear time complexity
+
+BigO names: best to worst 
+
+O(1) - constant
+O(logn) - Logarithmic(base 2)
+O(n) - Linear
+O(nlogn) - n log-star n(n times to the base 2n)
+O(n^2) - Quadratic

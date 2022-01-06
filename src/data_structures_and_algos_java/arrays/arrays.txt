@@ -1,0 +1,52 @@
+Arrays
+
+- an integer is 4 bytes
+- contiguous block in memory, all of its elements stored in sequential order not 
+  scattered around
+- every element occupies the same amount of space in memory 
+- object references are always the same size regardless of the type of object they're 
+  referring to 
+- in an array starts at memory address x, and the size of each element is y, we can calculate
+  the memory address of the nth element by using the following expression: x + n * y
+- if we know the index of an element, the time to retrieve the element will be the same, no matter
+  where it is in the array
+- are memory efficient because no extra information needs to be stored 
+- if there is a loop, then it will be linear loop, no loop equals constant time
+
+
+  Starting address of array = 12, element size(int) = 4 bytes
+    address intArray[0] = 12 + (0 * 4) = 12; this is why array index is zero based, otherwise we'd have to subtract 1 before multiplying by 4
+    address intArray[1] = 12 + (1 * 4) = 16;
+    address intArray[2] = 12 + (2 * 4) = 20;
+    address intArray[3] = 12 + (3 * 4) = 24;
+    address intArray[4] = 12 + (4 * 4) = 28;
+    address intArray[5] = 12 + (5 * 4) = 32;
+    address intArray[6] = 12 + (6 * 4) = 36;
+
+  ** if we know the index for a given value in an array, we can access it quickly by its 
+     memory address 
+
+  ** arrays are really good for retreiving a value if index is known, regardless where element 
+  is located in array 
+
+
+  Retrieving an element from an array(Time Complexity: O(1) when index is known, O(n), n 
+  is size of array, when searching for an element in an array)
+
+  1. Multiply the size of the element by its index: gives the offset from the beginning of the array
+  2. Get the start address of the array
+  3. Add the start address to the result of the multiplication
+
+  address intArray[0] = 12 + (0 * 4) = 12; 
+  address intArray[1] = 12 + (1 * 4) = 16;
+  address intArray[2] = 12 + (2 * 4) = 20;
+
+  ** does not matter how many elements an array has, it's going to take three steps to retrieve  
+
+  1. Retrieving when index is known - O(1)
+  2. Retrieving without index - O(n)
+  3. Add an element to a full array - O(n) ** involves creating a new array with desired length
+  4. Add an element to the end of an array with remaining space - O(1)
+  5. Insert or update an element at a specific index - O(1)
+  6. Delete an element by setting to null - O(1)
+  7. Delete an element by shifting elements - O(n)

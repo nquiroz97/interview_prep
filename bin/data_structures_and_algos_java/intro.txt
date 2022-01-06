@@ -1,0 +1,17 @@
+- A data structure organizes and stores data and each has strengths and weaknesses
+- An algorithm describes the steps needed to be taken to perform or accomplish a specific task
+  there can be many algorithms that accomplish the same task 
+
+ Example: Making tea 
+ 1. Boil water
+ 2. Add teabag to cup
+ 3. Pour the boiling water to cup
+ 4. Remove the teabag when tea is ready
+ 5. Add the desired amount of milk to the cup
+ 6. A the desired amount of sugar to the cup
+ 7. Stir the contents of the cup with a spoon
+
+ ** an algorithm is not the implementation ** 
+
+ - The implementation is the code written to perform the steps, there can be many implementations 
+   of the same algorithm

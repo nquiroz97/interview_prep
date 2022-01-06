@@ -1,0 +1,19 @@
+Bubble sort - large numbers are bubbling up to the top(bottom being first index)
+
+- It is an in-place algorithm as long as the memory does not increase as the number of 
+  items in array increase(i.e no additional array has to be created, memory efficient)
+- Quadratic time complexity: 0(n^2)
+- Amount of steps = amount of items ^ 2
+
+
+
+** the performance of this algorithm degrades quickly as the number of elements to sort increase
+- when sorting the array is partitioned
+steps: 
+ 1. we will have a variable: unsortedPartitionIndex, which is the last index of the 
+    unsorted partition(last index of array) when starting the sort since nothing has been sorted yet
+    next traversal unsortedPartitionIndex will be lastUnsortedPartitionIndex - 1
+ 2. array will be traversed from left to right(start at index(i) 0, compare to next index(i + 1), switch if next
+    is greater than i, increment as you go(i++)). Consecutive traversals, index will start back at 0.
+
+another implementation: array can be traversed from right to left

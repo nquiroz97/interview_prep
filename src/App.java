@@ -2,6 +2,7 @@ import java.util.HashMap;
 
 import algorithms.java.FizzBuzz;
 import algorithms.java.LongestWordClass;
+import algorithms.java.ParityDegree;
 import algorithms.java.RemoveDuplicateSortedArray;
 import algorithms.java.ReverseString;
 import algorithms.java.StringSymmetryPoint;
@@ -55,6 +56,8 @@ public class App {
         System.out.println(string);
 
         System.out.println(FizzBuzz.fizzBuzzBrute(15));
+
+        System.out.println(ParityDegree.solutionEfficient(24));
     }
 
     public static boolean containsCommonItem(char[] arr1, char[] arr2){

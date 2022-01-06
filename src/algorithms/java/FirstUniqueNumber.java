@@ -39,8 +39,7 @@ public class FirstUniqueNumber {
         ArrayList<Integer> integers = (ArrayList<Integer>) Arrays.stream(A).boxed().collect(Collectors.toList());
         LinkedHashSet<Integer> uniqueNums = new LinkedHashSet<>(integers);
        
-        return uniqueNums.iterator().next();
-        
+        return uniqueNums.iterator().next();  
     }
 
     //Time complexity: O(N * log(N))
