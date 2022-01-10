@@ -1,0 +1,24 @@
+Selection sort divides the array into sorted and unsorted partitions
+- Traverses the array looking for the largest element in the unsorted partition, then swap it
+  with the last element in the unsorted partition
+
+  Example: [ 20,35,-15,7,55,1,-22 ]
+            Unsorted --> | Sorted <--
+Starting: [ 20, 35,-15,7,55,1 | -22 ]
+
+  1. lastUnsortedIndex = 6, last index of unsorted partition
+  2. start with var largest(starts at index 0) and compares to index(i), 
+     i is index used to traverse the array from left to right
+  3. is index < largest, then index is now largest, largest = index of largest element
+     in unsorted partition
+  4. when done traversing the array, largest is swapped with the last element in the unsorted 
+     partition
+
+Selection sort 
+- in place algorithm as long as the memory does not increase as the number of 
+  items in array increase(i.e no additional array has to be created, memory efficient)
+- 0(n^2)
+- doesn't require as much swapping as bubble sort, generally will perform better than bubble
+- unstable algorithm
+
+ 

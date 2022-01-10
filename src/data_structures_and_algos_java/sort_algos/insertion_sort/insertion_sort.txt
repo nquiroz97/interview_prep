@@ -1,0 +1,18 @@
+Insertion sort grows a sorted partition from the front of the array, work is done in 
+the sorted partition
+
+Example: [ 20,35,-15,7,55,1,-22 ]
+            Sorted --> | Unsorted -->
+Starting: [ 20 | 35,-15,7,55,1,-22 ]
+
+1. firstUnsortedIndex (starts at 1) - first index of the unsorted partition
+2. i (starts at 0) - index used to traverse the sorted partition from right to left
+3. newElement - the value we want to insert into the sorted partition
+
+Insertion sort 
+- in place algorithm as long as the memory does not increase as the number of 
+  items in array increase(i.e no additional array has to be created, memory efficient)
+- O(n^2)
+- doesn't require as much swapping as bubble sort, generally will perform better than bubble
+- stable algorithm, since we're traversing left to right so first duplicate will always be 
+  swapped first 

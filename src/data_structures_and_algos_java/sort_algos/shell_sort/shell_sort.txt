@@ -1,0 +1,53 @@
+Shell Sort
+ ** advantage: if most of the values are already sorted, then only a few values will need **
+ ** to be inserted in the sorted partition, thus the amount of shifting reduced **
+ ** gap is also called the interval **
+ ** Example will be using the second sequence **
+
+ * In place algorithm
+ * Time Complexity: depends on gap sequence, but worst case is O(n^2)
+ * Does not require as much shifting 
+ * Unstable algorithm
+
+Shell sort starts out using a larger gap value, so instead of comparing elements to 
+their neighbours, it compares elements that are farther apart from each other in the array.
+And then as the algorithm runs, it reduces the gap that it's using. And the goal is to reduce
+the amount of shifting that's required. Whereas insertion sort compares each element's neighbor 
+
+ 
+- Variation of Insertion Sort
+- Insertion sort chooses which element to insert using a gap of 1
+- Shell sort starts out using a larger gap value
+- As the algorithm runs, the gap is reduced
+- Goal is to reduce the amount of shifting required
+
+- As the algorithm progresses, the gap is reduced 
+- The last gap value is always 1
+- A gap value of 1 is equivalent to insertion sort
+- So, the algorithm does some preliminary work(using gap values greater than 1), and 
+  then becomes insertion sort
+- By the time we get to the insertion sort, the array has been partially sorted
+  , so there is less shifting required
+
+  Knuth Sequence 
+
+  - Gap is calculated by ((3^k) - 1)/2
+  - K is set based on the length of the array 
+  - It is desired for gap to be as close as possible to the length of the array we want to
+    sort, without being greater than the length
+
+
+  k - gap
+  -------
+  1 - 1
+  2 - 4
+  3 - 13
+  4 - 40
+  5 - 121
+
+  Example Sequence 
+
+  - Gap will be based on length of array, gap will be initialized to array.length/2
+  - Each subsequent iteration the gap value will be divided by two until final gap
+    value is 1
+

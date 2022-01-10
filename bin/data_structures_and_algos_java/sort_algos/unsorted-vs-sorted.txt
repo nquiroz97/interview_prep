@@ -1,0 +1,19 @@
+- stable vs unstable comes inyo play when handling duplicate values in array 
+- unstable sort: relative ordering of duplicate items will not be preserved, 
+  so array[2]<9> array[5]<9>, value 9 from index 5 will come before 9 value from index 2
+- stable sort: relative ordering of duplicate items will be preserved, 
+  so array[2]<9> array[5]<9>, value 9 from index 5 will still come after 9 value from index 2
+- best case, stable is preferred over unstable
+
+why does original relative ordering matter?
+example: sort within in a sort(first sort by name then sort based on age)
+-if the second sort causes the positions of duplicates from the first sort to flip, it will cause problems
+
+normally for integers it does not matter, but if a sort algorithm is normally unstable,
+make sure your implementation is not inadvertently changing it to unstable
+
+Stable: 
+- Bubble sort
+
+Unstable: 
+
