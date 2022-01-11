@@ -1,0 +1,44 @@
+Quick Sort
+- In place algorithm
+- O(n log n) - base 2. We're repeatedly partitioning the array into two halves
+  , worst case O(n^2)
+- Unstable algorithm
+- most of the time, it performs better than merge sort 
+
+- Divide and conquer algorithm
+- Recursive algorithm
+- Uses a pivot element to partition the array into two parts
+- Elements < pivot to its left, elements > pivot to its right
+- Pivot will then be in correct sorted position
+- After the partitioning, process is repeated for the left array and right array
+- Eventually, every element has been the pivot, so every element will be in its correct 
+  sorted position
+- As with the merge sort, we'll end up partitioning the array into a series of 1-element 
+  arrays
+- Does this in-place(unlike merge sort)
+
+-- Pivot will be the first element in the array(or subarray)
+
+Starting: [ 20, 35,-15,7,55,1,-22 ]
+start = 0, i = start
+end = 7, j = end
+pivot = 20 (array[start])
+
+We start with (--j) and go from right to left, looking for the first element that's less than 
+the pivot element 
+-22 is less than the pivot element, so we assign to position i, which is 0 
+
+Now we switch to i, now we start with (i++) and go from left to right, looking for the first 
+element that's greater than the pivot
+35 is greater than the pivot so we assign it to position j, which is 6
+
+-22, 35, -15, 7, 55, 1, 35
+                        |
+
+Data has not been lost because whatever was at position 6 was already moved
+By alternating between going from right to left 
+
+j moves from right to left looking for values are smaller than the pivot, and i moves from 
+left to right lokking for values that are larger than the pivot 
+
+
