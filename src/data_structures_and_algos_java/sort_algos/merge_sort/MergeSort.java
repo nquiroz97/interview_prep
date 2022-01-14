@@ -28,10 +28,10 @@ public class MergeSort {
         mergeDescending(array, start, mid, end);
     }
 
-    private static void merge(int[] array, int start, int mid, int end) {
-        /* left partition is already sorted, so if last element is less than first element
+    /*private static void merge(int[] array, int start, int mid, int end) {
+         left partition is already sorted, so if last element is less than first element
            of right partition, all elements of left are less than first element of right. and 
-           all other elements of right partition are greater than first element of right */
+           all other elements of right partition are greater than first element of right 
         if(array[mid - 1] <= array[mid]){
             return;
         }
@@ -46,7 +46,7 @@ public class MergeSort {
         }
         System.arraycopy(array, i, array, start + tempIndex, mid - i);
         System.arraycopy(temp, 0, array, start, tempIndex);
-    }
+    }*/
 
     //Challenge 1: modify to sort in desc order
     private static void mergeDescending(int[] array, int start, int mid, int end) {

@@ -47,6 +47,7 @@ public class TwoNumberSum {
     }
 
     // Time complexity: O(n*log(n))
+    //returns values not indices
     public static int[] findTwoSum_Sorting(int[] nums, int target) {
         Arrays.sort(nums);
         int left = 0;
