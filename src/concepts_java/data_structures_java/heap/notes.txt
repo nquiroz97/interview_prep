@@ -1,0 +1,64 @@
+a heap data structure can be created using a binary tree(no more than two children),
+ternary tree(three children), n-tree(n number of children)
+
+it is built top-down, left to right: fill the left child then the right child always 
+
+two types of heaps: max and min
+
+max: root node is the largest element in the entire tree, parent >= child 
+min: parent needs to be smaller or equal to child(all parents are smaller than their children)
+
+for managing within code, nodes can be placed in a linked list or array
+
+    example: 
+   
+            17
+           /  \
+          15   9
+         / \  / \
+        1  12 3  8       
+
+      first row    second row    third row
+        { 17 }      { 15,9 }   { 1,12,3,8 }
+        [ 17,15,9,1,12,3,8 ]
+
+formula for finding node in question(left child): 2n + 1 (n represents the childs parent index)
+    example: find index for 3
+
+    9 is parent, index 2
+
+    2*2 + 1 = 5
+
+    3 is in index 5 
+
+formula for finding node in question(right child): 2n + 2 (n represents the childs parent index)
+    example: find index for 8
+
+    9 is parent, index 2
+
+    2*2 + 2 = 6
+
+    15 is in index 2 
+
+formula for finding node in question(parent): (n - 1) / 2 (n represents the childs index, round down)
+    example: find parent index for 12
+
+    12 is in index 4
+
+    4 - 1 / 2 = 1.5 = 1
+
+    15(parent) is in index 1
+
+    example: find parent index for 3
+
+    3 is in index 5
+
+    5 - 1 / 2 = 2 
+
+    9(parent) is in index 2
+
+
+
+
+
+ 

@@ -1,0 +1,10 @@
+a heap data structure can be created using a binary tree(no more than two children),
+ternary tree(three children), n-tree(n number of children)
+
+it is built top-down, left to right: fill the left child then the right child always 
+
+two types of heaps: max and min
+
+max: root node is the largest element in the entire tree, parent >= child 
+min: parent needs to be smaller or equal to child(all parents are smaller than their children)
+ 

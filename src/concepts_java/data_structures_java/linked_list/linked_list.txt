@@ -14,4 +14,6 @@ used for storing a collection of data
      preceding it 
 - doubly linked lists, the nodes are aware of the ones following and preceding them
    this allows to insert in the middle of list
+- searching for an element takes longer in a linked list, since we still have to traverse 
+  trhough the list 
 
